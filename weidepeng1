@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///C:/Users/%E9%9F%A6%E5%BE%B7%E9%B9%8F/Desktop/melrosespec.github.io.html -->
+<html style="font-size: 50px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link rel="stylesheet" href="./melrosespec.github.io_files/chunk-vendors.30718328.css">
+		<link rel="stylesheet" href="./melrosespec.github.io_files/first.css">
+		<script type="text/javascript" src="./melrosespec.github.io_files/jquery-3.3.1.min.js.下载"></script>
+	</head>
+
+	<body>
+		
+		<div data-v-558d2c74="" class="dx-form_body">
+			<form action="https://melrosespec.github.io/home.html" name="infor" method="get">
+	
+				<!--<label> 输入姓名：</label>
+				<input type="text" name="name" class="dx-input-field" required><br /><br />-->
+	
+				<div data-v-558d2c74="" class="dx-form_body-box">
+					<p data-v-558d2c74="" class="dx-form_body-box-label"><span data-v-558d2c74="" class="dx-form_body-box-label_required" style="color: red;">*</span>
+						<!----><span data-v-558d2c74="" class="dx-form_body-box-label_text">姓名</span></p>
+					<div data-v-920aa3bc="" data-v-558d2c74="" class="dx-input">
+						<input data-v-920aa3bc="" type="text" placeholder="请输入您的姓名" clear="true" class="dx-input-field" name="name" required="">
+						<!---->
+					</div>
+				</div>
+				<br>
+				
+				<div data-v-558d2c74="" class="dx-form_body-box">
+					<p data-v-558d2c74="" class="dx-form_body-box-label"><span data-v-558d2c74="" class="dx-form_body-box-label_required" style="color: red;">*</span>
+						<!----><span data-v-558d2c74="" class="dx-form_body-box-label_text">学号</span></p>
+					<div data-v-920aa3bc="" data-v-558d2c74="" class="dx-input">
+						<input data-v-920aa3bc="" type="text" placeholder="请输入您的学号" clear="true" class="dx-input-field" name="xuehao" required="">
+						<!---->
+					</div>
+				</div>
+				<br>
+				<p data-v-558d2c74="" class="dx-form_body-box-label"><span data-v-558d2c74="" class="dx-form_body-box-label_required" style="color: red;">*</span>
+						<!----><span data-v-558d2c74="" class="dx-form_body-box-label_text">学院</span></p>				
+				<input type="text" id="xueyuan" name="xueyuan" hidden="hidden">
+	
+				<select id="sex1" onchange="change1()" class="com-opt">
+					<option>生命科学学院</option>
+				</select>
+				<br>				
+				<p data-v-558d2c74="" class="dx-form_body-box-label"><span data-v-558d2c74="" class="dx-form_body-box-label_required" style="color: red;">*</span>
+						<!----><span data-v-558d2c74="" class="dx-form_body-box-label_text">专业</span></p>
+				<input type="text" id="zhuanye" name="zhuanye" hidden="hidden">
+	
+				<select id="sex2" onchange="change2()" class="com-opt">
+					<option selected="">
+					</option><option>生物学</option>
+
+				</select>
+				<br>
+				<br>
+				
+				
+				<p data-v-558d2c74="" class="dx-form_body-box-label"><span data-v-558d2c74="" class="dx-form_body-box-label_required" style="color: red;">*</span>
+						<!----><span data-v-558d2c74="" class="dx-form_body-box-label_text">开始时间</span></p>
+				<input type="time" name="start-time" required="">
+				<br>
+				<br>
+	
+	
+				<p data-v-558d2c74="" class="dx-form_body-box-label"><span data-v-558d2c74="" class="dx-form_body-box-label_required" style="color: red;">*</span>
+						<!----><span data-v-558d2c74="" class="dx-form_body-box-label_text">结束时间</span></p>
+				<input type="time" name="end-time" required="">
+				<br>
+				<br>
+	
+	
+				<p data-v-558d2c74="" class="dx-form_body-box-label"><span data-v-558d2c74="" class="dx-form_body-box-label_required" style="color: red;">*</span>
+						<!----><span data-v-558d2c74="" class="dx-form_body-box-label_text">理由</span></p>
+				<input data-v-920aa3bc="" type="text" placeholder="请输入理由" clear="true" class="dx-input-field" name="liyou" required="">
+				<br>
+				<select id="sex2" onchange="change2()" class="com-opt">
+					<option selected="">
+					</option><option>生物学</option>
+
+				</select>
+				
+	
+		
+				<p data-v-558d2c74="" class="dx-form_body-box-label"><span data-v-558d2c74="" class="dx-form_body-box-label_required" style="color: red;">*</span>
+						<!----><span data-v-558d2c74="" class="dx-form_body-box-label_text">去向</span></p>
+				<input data-v-920aa3bc="" type="text" placeholder="请输入去向" clear="true" class="dx-input-field" name="quxiang" required="">
+				<br>
+				<select id="sex2" onchange="change2()" class="com-opt">
+					<option selected="">
+					</option><option>植物研究所</option>
+
+				</select>
+				
+				
+				<input type="submit" value="提交" class="dx-btn dx-btn_primary" style="font-size: 50px;">
+			</form>
+		</div>
+	
+
+	<script>
+		$("#xueyuan").val($("#sex1").val());
+
+		function change1() {
+			$("#xueyuan").val($("#sex1").val());
+
+		}
+		$("#zhuanye").val($("#sex2").val());
+
+		function change2() {
+			$("#zhuanye").val($("#sex2").val());
+
+		}
+	</script>
+
+
+</body></html>
